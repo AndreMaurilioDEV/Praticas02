@@ -1,28 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+
 *{
     margin:0;
     padding:0;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 html{
-    font-size:62,5%;
+    font-size:62.5%;
 }
+
+
 
 nav{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
     margin: 30px auto;
 }
 
 nav ul, .linksocial ul{
     display: flex;
+    align-items: center;
 
 }
 
 nav ul li{
-    margin-left: 20px;
+    margin-left: 30px;
+    color: #521E70;
+    font-size: 1.8rem;
 }
+
+
+
+
+.btn button{
+    color: white;
+    background-color: #04B2D9;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 60px;
+}
+
+.btngrid2 button{
+    color: white;
+    background-color: #04B2D9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+
+}
+
+li:hover{
+    color: #E53EA8;
+}
+
+
+.linksocial li:hover i{
+    color: #05DBF2;
+}
+
+
 
 section{
     width: 100%;
@@ -40,7 +82,10 @@ section{
 
     
 
-
+.iconcards i{
+    font-size: 3.2rem;
+    color: #521E70;
+}
 
  .icon img{
     width: 100px;
@@ -48,7 +93,7 @@ section{
 
 }
 
-.contentsec-top, .icon, .titletop, .desctop, .btn, .iconcards{
+ .icon, .titletop, .desctop, .btn, .iconcards{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,8 +102,54 @@ section{
 
 }
 
+.content-sectop .titletop{
+    font-size: 1.9rem;
+}
+
+.content-sectop .desctop{
+    font-size: 1.6rem;
+}
+
+
+.titletop, .desctop{
+    color: white;
+}
+
+.gridcards .titletop{
+    color: #521E70;
+    letter-spacing: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.gridcards .desctop{
+    color: black;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    
+}
+
+.titlesec2{
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+    color: #521E70;
+}
+
+.descsec2{
+    color: black;
+    font-size: 1.3rem;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+
+
+
+
 .containercards{
-    background-color: #D9D9D9;
+    background-color: #EAEAEA;
+    height: 250px;
 
 }
 
@@ -68,6 +159,7 @@ section{
     grid-gap: 20px;
     max-width: 90vw;
     margin: 0 auto;
+   
     
 }
 
@@ -83,31 +175,69 @@ section{
 
 footer{
             
-    width: 90vw;
+    width: 100%;
     margin: 0 auto;
+    background-color: #0D608A;
+    margin-top: 40px;
 }
 
     
 .linksocial{
   display: flex;
   justify-content: center;
+  align-items: center;
 
 }
+
+.linksocial li{
+    margin-left: 15px;
+    color: #122F3D;
+}
+
+.linksocial li i{
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
 .direitos{
    text-align: center;
+   background-color: #122F3D;
+   color: #d3d3d3;
+   font-size: 1.3rem;
 }
 
 
 
 
 @media (max-width:1180px){
+
+    html{
+        font-size: 45%;
+    }
     section{
         height: 60vh;
         background-position: center right;
     }
 
-    .gridcards:nth-child(+3){
-        margin-bottom: 40px;
+
+    .gridcards .titletop, .desctop{
+        margin-top: 5px;
+        margin-bottom: 0;
+
+    }
+
+    
+
+    .gridcards:nth-child(n+3)  .iconcards{
+        margin-top: 0px;
+    }
+
+
+
+    
+
+    .gridcards .desctop{
+        width: 100%;
     }
 
     .cards{
@@ -121,8 +251,26 @@ footer{
 
     }
 
+    .descsec2{
+        margin: 5px 0px;
+    }
+
+    .btngrid2{
+        margin-top: 16px;
+    }
+
 
     @media (max-width:768px){
+
+
+
+        html{
+            font-size: 45%;
+
+        }
+        .icon img {
+            width: 75px;
+        }
         section{
             height: 45vh;
             width: 100%;
@@ -130,23 +278,65 @@ footer{
             background-color: purple;
         }
 
+        .content-sectop .btn{
+            margin-top: 15px;
+        }
+
+        .content-sectop .btn button{
+            padding: 8px 30px;
+        }
+
+
+        .content-sectop .desctop{
+            margin-top: 10px;
+        }
+
+       
+
         .containercards{
             width: 100%;
-        }
-    
-        .gridcards:nth-child(+3){
-            margin-bottom: 40px;
-        }
-    
-        .cards{
-            grid-template-columns: repeat(2,1fr);
+           height: 440px;
             
         }
 
-        .icon img{
-            width: 75px;
-            height: 75px;
+        .gridcards .titletop, .desctop, .iconcards{
+            margin-top: 10px;
+           
         }
+
+        .cards .gridcards .desctop{
+            margin-bottom: 0px;
+        
+        }
+        
+        .grid2{
+            margin-top: 20px;
+        }
+
+
+
+        
+
+
+
+    
+        
+
+        .gridcards:nth-child(+2) .iconcards{
+            margin-top: 0;
+        }
+    
+        .cards{
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+
+        .containercards .desctop {
+           
+          width: 100%;
+        }
+
+        
 
         
     
@@ -175,7 +365,7 @@ footer{
 
         
        html{
-        font-size: 50%;
+        font-size: 40%;
        }
         nav{
             flex-direction: column;
@@ -197,8 +387,8 @@ footer{
 
         nav ul li{
             margin:0px;
-           margin-bottom: 25px;
-           margin-top: 25px;
+           color: white;
+           padding: 15px;
         }
 
         .icon img{
@@ -208,13 +398,22 @@ footer{
         }
 
         section{
-            height: 18vh;
+            height: 30vh;
             background-color: white;
         }
 
         section .btn, .titletop, .desctop, .icon{
             margin-top: 0px;
 
+        }
+
+        .content-sectop .titletop, .desctop{
+           color: #521E70;
+        }
+
+        .content-sectop .desctop{
+            text-align: center;
+            color: #521e709a;
         }
 
         .cards{
@@ -232,6 +431,25 @@ footer{
 
         .grid2{
             margin-top: 25px;
+        }
+
+        .grid2 .btngrid2 button{
+            padding: 8px 10px;
+        }
+
+
+
+        
+
+        
+
+        nav a:hover li{
+            background-color: #E53EA8;
+            color: #521E70;
+        }
+
+        .linksocial li:hover i{
+            color: #05DBF2;
         }
     }
 
