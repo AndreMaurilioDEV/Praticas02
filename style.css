@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 
 
+
 *{
     margin:0;
     padding:0;
@@ -36,7 +37,15 @@ nav ul li{
 }
 
 
+.btngrid2 button:hover{
+    cursor: pointer;
+    color: #336899;
+}
 
+.btn button:hover{
+    cursor: pointer;
+    color: #336899;
+}
 
 .btn button{
     color: white;
@@ -367,11 +376,21 @@ footer{
        html{
         font-size: 40%;
        }
+
+       nav img{
+        width: 350px;
+        height: 70px;
+        
+       }
         nav{
             flex-direction: column;
             text-align: center;
-            width: 96vw;
+            width: 100%;
             margin: 0;
+        }
+
+        nav .icontop{
+            text-align: center;
         }
 
         nav h1{
@@ -381,7 +400,7 @@ footer{
         nav ul{
             display: block;
             background-color: purple;
-            width: 96vw;
+            width: 100%;
 
         }
 
