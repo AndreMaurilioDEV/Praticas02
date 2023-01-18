@@ -416,6 +416,12 @@ footer{
            
         }
 
+       .descsec2{
+            text-align: justify;
+            width: 70%;
+           
+        }
+
         section{
             height: 30vh;
             background-color: white;
