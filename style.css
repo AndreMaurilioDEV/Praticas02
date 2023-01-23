@@ -96,9 +96,15 @@ section{
     color: #521E70;
 }
 
+.icon{
+    height: 120px;
+}
+
+
+
  .icon img{
-    width: 100px;
-    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
 
 }
 
@@ -125,8 +131,8 @@ section{
 }
 
 .gridcards .titletop{
-    color: #521E70;
-    letter-spacing: 0.5rem;
+    color: #521e70;
+    letter-spacing: 0.2rem;
     font-size: 1.7rem;
 }
 
@@ -226,6 +232,7 @@ footer{
     section{
         height: 60vh;
         background-position: center right;
+       
     }
 
 
@@ -370,7 +377,7 @@ footer{
 
 
 
-    @media (max-width:435px){
+    @media (min-width:435px){
 
         
        html{
@@ -410,7 +417,7 @@ footer{
            padding: 15px;
         }
 
-        .icon img{
+        .icon{
             display: none;
            margin-top: 0;
            
