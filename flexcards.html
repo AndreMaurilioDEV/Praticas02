@@ -21,19 +21,19 @@
     .cardcontent{
         border: 1px solid red;
         width: 30%;
-        display: flex; /*Centraliza todo conteúdo*/
-        flex-direction: column; /*Coloca o conteúdo em coluna, invés de linha(padrão do flex)*/
+        display: flex;  /*Centraliza todo conteúdo*/
+        flex-direction: column;     /*Coloca o conteúdo em coluna, invés de linha(padrão do flex)*/
         margin: 1%;
         padding: 1%;
         margin: 0 auto; 
     }
 
     .cardcontent p{
-        flex-grow: 1; /*Deixa o conteúdo do paragráfo ao tamanho 100% do card, invés de regular através de números de paragráfos.*/
+        flex-grow: 1;    /*Deixa o conteúdo do paragráfo ao tamanho 100% do card, invés de regular através de números de paragráfos.*/
     }
 
     .cardcontent button{
-        align-self: center; /*align self é usado para um único filho, o align items possui o mesmo sentido do align self, porém estabelece o self para todos os filhos(pai), sendo usado mais em containers(pai) junto ao justify content.*/
+        align-self: center;     /*align self é usado para um único filho, o align items possui o mesmo sentido do align self, porém estabelece o self para todos os filhos(pai), sendo usado mais em containers(pai) junto ao justify content.*/
         width: 50%;
 
     }
@@ -41,26 +41,29 @@
 </style>
 <body>
     <div class="cardcontainer">
+
+
         <div class="cardcontent">
             <h3>titulo</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui corrupti atque et tempore maxime, eveniet, sapiente eligendi dolor, sint eos consequuntur excepturi laboriosam non architecto explicabo expedita veniam. Quae tempore, neque blanditiis dolore, tempora assumenda perferendis reprehenderit ipsum recusandae at nobis? Hic nulla placeat inventore distinctio natus sit fuga!</p>
-           <button>Mais</button>
-
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui corrupti atque et tempore maxime, eveniet, sapiente eligendi dolor, sint eos consequuntur excepturi laboriosam non architecto explicabo expedita veniam. Quae tempore, neque blanditiis dolore, tempora assumenda perferendis reprehenderit ipsum recusandae at nobis? Hic nulla placeat inventore distinctio natus sit fuga!</p>
+                    <button>Mais</button>
         </div>
 
 
         <div class="cardcontent">
             <h3>titulo</h3>
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil dolorum architecto soluta quis, corporis nulla assumenda repellat quae provident. Alias quidem ullam libero quibusdam.</p>
-           <button>Mais</button>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil dolorum architecto soluta quis, corporis nulla assumenda repellat quae provident. Alias quidem ullam libero quibusdam.</p>
+                    <button>Mais</button>
         </div>
 
 
         <div class="cardcontent">
             <h3>titulo</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem deleniti totam cupiditate harum similique.</p>
-           <button>Mais</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem deleniti totam cupiditate harum similique.</p>
+                    <button>Mais</button>
         </div>
+
+
     </div>
     
 </body>
