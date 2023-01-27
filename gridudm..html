@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Class</title>
+    <style>
+
+        html{
+            font-size: 25px;
+        }
+        .gridcontainer{
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+            background-color: lightgrey;
+            grid-template-columns:  repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+            grid-gap: 20px;
+           
+        }
+
+        .griditems{
+            background-color: red;
+        }
+
+        .griditems:nth-child(1){
+            grid-column: 3/4;
+
+
+        }
+
+        .griditems:nth-child(2){
+            grid-column: 1/-1;
+
+        }
+
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="griditems">1</div>
+        <div class="griditems">2</div>
+        <div class="griditems">3</div>
+        <div class="griditems">4</div>
+        <div class="griditems">5</div>
+        <div class="griditems">6</div>
+        <div class="griditems">7</div>
+        <div class="griditems">8</div>
+        <div class="griditems">9</div>
+    </div>
+    
+</body>
+</html>
