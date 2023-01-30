@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+    <title>Layout GRID</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+        }
+
+        header{
+            width: 100%;
+            height: 36px;
+            background-color: #2E7981;
+            display: flex;
+            align-items: center;
+
+        }
+
+        i{
+            font-size: 17px;
+        }
+
+        .itensheader{
+            display: flex;
+            width: 1170px;
+            margin: 0 auto;
+            justify-content: space-between;
+           
+        }
+
+        .itensheader ul{
+            display: flex;
+           
+            margin-bottom: 10px;
+        }
+
+        .itensheader li{
+            margin-right: 30px;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        nav{
+            width: 100%;
+            height: 50px;
+            background-color: #46A6AF;
+            display: flex;
+            align-items: center;
+        }
+
+        .itensnav{
+            display: flex;
+            width: 1170px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        .itensnav ul{
+            display: flex;
+        }
+
+        .itensnav li{
+            margin-right: 20px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            color: white;
+            font-size: 14px;
+        }
+
+        .ícones li{
+            margin-left: 30px;
+            margin-right: 0px;
+        }
+
+
+        
+        aside{
+            width: 1170px;
+            height: 290px;
+            background-color: #379099;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            
+            
+        }
+
+        .icon{
+            background-color: #46A6AF;
+            width: 820px;
+            height: 100%;
+        }
+
+        .icon img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-aside{
+            padding: 25px;
+            
+        }
+
+        .content-aside h1{
+            font-size: 32px;
+            color: white;
+            font-family: 'Anton', sans-serif;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .content-aside p{
+            font-size: 15px;
+            margin-top: 10px;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        section{
+            width: 1170px;
+            height: 390px;
+        }
+
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-row: repeat(3,1fr);
+            grid-gap: 15px;
+            height: 1200px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+
+         
+
+        .gridcards{
+            background-color: white;
+            height: 400px;
+            border-bottom: 1px solid #a9a9a9;
+            
+            
+            
+            
+           
+        }
+
+        .gridcards h2{
+            font-family: 'Anton', sans-serif;
+            font-weight: 300;
+            color: #379099;
+            font-size: 18px;
+            
+        }
+
+        .gridcards p{
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            
+        }
+
+
+        .iconcards img{
+            width: 100%;
+            height: 100%;
+        }
+
+       
+
+       .desccard{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        
+       }
+
+        .anuncio img{
+            height: 100%;
+            width: 100%;
+        }
+
+
+        .iconcards{
+            width: 100%;
+            height: 50%;
+            background-color: palegoldenrod;
+        }
+
+
+        .content-card{
+            padding: 15px;
+            background-color: white;
+            width: 80%;
+            height: 100%;
+            margin-top: -29px;
+        }
+
+        footer{
+            height: 220px;
+            background-color: #2E7981;
+            margin-top: 40px;
+        }
+
+        .container-content{
+            display: flex;
+            justify-content: center;
+        }
+
+      
+    </style>
+</head>
+<body>
+  <header>
+
+    <div class="itensheader">
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-solid fa-rss"></i></li>
+            <li>CADASTRA-SE</li>
+            <li>LOGIN</li>
+        </ul>
+    </div>
+
+  </header>
+  <nav>
+
+
+    <div class="itensnav">
+        <ul>
+            <li>ARTIGO</li>
+            <li>ECONOMIA</li>
+            <li>POLÍTICA</li>
+            <li>ENTREVISTAS</li>
+            <li>LOJA</li>
+        </ul>
+
+        <ul class="ícones">
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-message"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+    </div>
+
+  </nav>
+
+
+  <aside>
+
+    <div class="icon">
+        <img src="images/img-nov-2021-750x288.jpg" alt="">
+    </div>
+
+    <div class="content-aside">
+        <h1>Futebol e economia <br> sempre caminham lado a lado</h1>
+        <p>O futebol tem o poder de movimentar a economia <br> do país e no decorrer desse artigo você conhecerá  <br> de  que forma isso acontece.</p>
+    </div>
+
+    
+
+  </aside>
+
+  <section class="gridcontainer">
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>Afinal, qual é o melhor curso Ancord?</h2>
+                </div>
+                <div class="desccard">
+                    <p>Se você tem interesse em seguir na trilha dos investimentos, o curso Ancord compila todo o conhecimento necessário para o exame dessa certificação financeira.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>O que fazer se você ganhar na loteria? Confira dicas para fazer o prêmio render</h2>
+                </div>
+                <div class="desccard">
+                    <p>Dados de 2021, levantados pela consultoria britânica Newmark, apontam que o número de milionários no Brasil pode ultrapassar 480 mil pessoas até 2025. E, se você ganhar na loteria, também pode entrar para esse time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>Artigo da Betway mostra consolidação do Pará na produção de cacau com mais de 140 mil toneladas por ano</h2>
+                </div>
+                <div class="desccard">
+                    <p>A região Norte do Brasil é constantemente apontada como uma das mais frágeis economicamente. Entretanto, os números mostram uma situação diferente.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>A economia de um casino - como funciona</h2>
+                </div>
+                <div class="desccard">
+                    <p>Em Las Vegas os hotéis cassinos atraem mais de 38 milhões de turistas todo o ano. Estas e outras casas de jogos lucram oferecendo jogos de apostas que oferecem pagamentos médios inferiores à renda produzida pelas apostas</p>
+                </div>
+                    </div>
+        </div>
+        </div>
+
+
+    <div class="gridcards">
+       
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+            
+                <div class="container-content">
+                    <div class="content-card">
+                        <div class="titlecard">
+                            <h2>O poder da informação no planejamento financeiro doméstico</h2>
+                        </div>
+                    
+                                    <div class="desccard">
+                        <p>O planejamento financeiro pessoal costuma ser comparado como um planejamento financeiro empresarial simplificado, com menos variáveis. De fato, os princípios por trás da organização das contas de casa são os mesmos</p>
+                                    </div>
+                    </div>
+                </div>
+      
+        
+    </div>
+
+
+
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>Turismo residencial é alternativa para quem desejar economizar nas viagens de férias</h2>
+                </div>
+                <div class="desccard">
+                    <p>Os gastos com viagens costumam ser altos para todas as famílias, sejam estes destinados para férias fora do Brasil ou até mesmo para uma visita em um estado diferente.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+   
+
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>ApexBrasil impulsiona recorde de faturamento da indústria de alimentos e bebidas e exportações do agronegócio brasileiro em 2021</h2>
+                </div>
+                <div class="desccard">
+                    <p>Agronegócio fechou o ano com aumento de 18,4% e indústria alimentícia com alta de 16,8% no faturamento das exportações.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="gridcards">
+        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt=""></div>
+        <div class="container-content">
+            <div class="content-card">
+                <div class="titlecard">
+                    <h2>A legalização do jogo poderia ajudar o Brasil em sua crise financeira?</h2>
+                </div>
+                <div class="desccard">
+                    <p>Um dos argumentos mais contundentes sobre a regulamentação dos jogos em território brasileiro é o argumento de que o mercado poderia salvar o Brasil da atual crise financeira que enfrenta.<p>
+                        </div>
+                </div>
+        </div>
+        
+    </div>
+    
+    <div class="anuncio">
+        <img src="images/banner3-390-x-400.png.crdownload" alt="">
+
+    </div>
+    
+  </section>
+
+
+  <footer>
+
+  </footer>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areas - Layouts Simples</title>
+    <style>
+         .gridcontainer{
+            width: 1200px;
+            background-color: lightgray;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 50px 1fr 50px;
+            grid-gap: 20px;
+
+            grid-template-areas: "header header header"
+                                 "nav    nav   aside"
+                                 "main   main   aside"
+                                 "footer footer aside"
+
+              /* Templeta areas precisa preencher o mesmo número de colunas e linhas */
+        }
+
+
+        header{
+           grid-area: header;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+
+        main{
+            grid-area: main;
+            min-height: 200px;
+           
+        }
+
+        aside{
+            grid-area: aside;
+        }
+
+         footer{
+            grid-area: footer;
+        } 
+
+        header, nav, main, aside,footer{
+            background-color: orange;
+        }
+
+         /* No template area não é possível mesclar colunas como usando a propriedade column, é um recurso para layouts mais simples, como esse.  */
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="gridcontainer">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>
