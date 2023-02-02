@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes anda{
+            0%{
+                transform: translateX(0);
+                background-color: yellow;
+            }
+
+            25%{
+                height: 120px;
+            }
+
+            50%{
+                background-color: orange;
+            }
+
+            75%{
+                background-color: green;
+            }
+
+            100%{
+                transform: translateX(300px);
+                background-color: blue;
+            }
+        }
+
+        #anima-time div{
+
+            width: 80px;
+            height: 50px;
+            margin-top: 20px;
+            border: solid 3px red;
+
+        }
+
+        #anima-time div:nth-child(1){
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+
+
+             /*  
+                linear - não acelera e nem desacelera em momento nenhum
+                ease in - acelera no começo
+                ease out - desacelera no fim
+                ease in out - faz as duas funções   
+            */
+
+             animation: anda 2s linear;  /*SHORTHAND*/
+
+        }
+
+        #anima-time div:nth-child(2){
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+
+            animation-iteration-count: 3; /*Vezes da animação*/
+           
+
+            animation-direction: reverse; /*Inicia a animação do final para o começo e não volta*/
+           /* animation-direction: alternate; Inicia a animação do começo ao fim, indo e voltando*/
+            /* animation-direction: alternate-reverse; Inicia a animação do final, voltando e indo*/
+
+
+            animation: anda 2s ease-in-out 3 reverse;
+           
+
+        }
+
+       
+
+        #anima-time div:nth-child(3){
+           
+            animation-delay: 2s;
+            animation: anda 2s ease-in-out 2s 3 alternate;
+
+        }
+
+        #anima-time div:nth-child(4){
+
+
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            background: red;
+
+
+            animation-fill-mode: backwards; /*Antes de iniciar a animação ja pega as propriedades de color do keyframes. obs: quando acaba animação volta pra o red*/
+            /*animation-fill-mode: forwards; Antes de iniciar a animação pega as propriedades de color da própria div, porém quando acaba, volta para cor 0% do keyframes*/
+            /*animation-fill-mode: both; Aplicados em conjunto */
+
+        }
+
+
+        #anima-time div:nth-child(5){
+
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+
+        }
+
+        #anima-time div:nth-child(5):hover{
+
+            animation-play-state: paused; /*Pausa quando passar o mouse na div*/
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <p>ORDEM SHORTHAND</p>
+    <p>animation: name durantion timing-function delay iteration-count direction fill-mode play-state</p>
+    <h1>Animation</h1>
+    <div id="anima-time">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    </div>
+
+   
+    
+</body>
+</html>
