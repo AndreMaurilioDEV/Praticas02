@@ -8,19 +8,29 @@
     <title>Layout GRID</title>
     <style>
 
+
+
         @import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway&display=swap');
+
+        /* FONTE 52658F*/
+         /* HEADER F7F5E6*/
+          /* NAV 333A56*/
+           /* ASIDE 52658F*/
 
         *{
             padding: 0;
             margin: 0;
             list-style: none;
+            text-decoration: none;
+            /*scroll-behavior: smooth;*/
+          
             
         }
 
         header{
             width: 100%;
             height: 36px;
-            background-color: #2E7981;
+            background-color: #F7F5E6;
             display: flex;
             align-items: center;
 
@@ -44,9 +54,13 @@
            
         }
 
+        .itensheader ul li i{
+            color: #333A56;
+        }
+
         .itensheader li{
             margin-right: 30px;
-            color: white;
+            color: #333A56;
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
             font-size: 14px;
@@ -55,9 +69,13 @@
         nav{
             width: 100%;
             height: 50px;
-            background-color: #46A6AF;
+            background-color: #333A56;
             display: flex;
             align-items: center;
+        }
+
+        .itensnav li:hover{
+            background-color: #52658F;
         }
 
         .itensnav{
@@ -65,18 +83,22 @@
             width: 1170px;
             margin: 0 auto;
             justify-content: space-between;
+            align-items: center;
         }
 
         .itensnav ul{
             display: flex;
+            align-items: center;
+            
         }
 
         .itensnav li{
-            margin-right: 20px;
+            margin-right: 8px;
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
             color: white;
             font-size: 14px;
+            padding: 16px 9px;
         }
 
         .ícones li{
@@ -89,7 +111,7 @@
         aside{
             width: 1170px;
             height: 290px;
-            background-color: #379099;
+            background-color: #52658F;
             margin: 0 auto;
             margin-top: 50px;
             display: flex;
@@ -123,7 +145,7 @@
 
         .content-aside h1{
             font-size: 32px;
-            color: white;
+            color: #F5F7E6;
             font-family: 'Anton', sans-serif;
             font-weight: 300;
             margin-top: 10px;
@@ -132,7 +154,7 @@
         .content-aside p{
             font-size: 15px;
             margin-top: 10px;
-            color: white;
+            color: #F5F7E6;
             font-family: 'Raleway', sans-serif;
         }
 
@@ -169,9 +191,13 @@
         .gridcards h2{
             font-family: 'Anton', sans-serif;
             font-weight: 300;
-            color: #379099;
+            color: #52658F;
             font-size: 18px;
             
+        }
+
+        .gridcards a:hover h2{
+            color: #333A56;
         }
 
         .gridcards p{
@@ -228,7 +254,7 @@
 
         footer{
             height: 220px;
-            background-color: #2E7981;
+            background-color: #333A56;
             margin-top: 40px;
         }
 
@@ -315,6 +341,60 @@
             font-weight: 400;
         }
 
+        .bar{
+            
+            height: 40px;
+            border-radius: 40px;
+            background-color: #2E7981;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+            
+        }
+
+        .search-button img{
+            width: 20px;
+            height: 20px;
+        }
+
+        .search-text{
+            border: 0;
+            outline: 0;
+            color: white;
+            font-size: 16px;
+            background-color: #2E7981;
+            line-height: 40px;
+            border-radius: 20px;
+            width: 0;
+            padding: 0;
+            margin-left: 3px;
+        }
+
+        .search-button{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .search-text::placeholder{
+            color:  #18575e;
+           
+        }
+
+        .bar:hover > .search-text{
+            width: 200px;
+            transition: 0.5s;
+        }
+
+        .bar:hover  .search-button{
+            background-color: #18575e;;
+        }
+
 
 
 
@@ -375,12 +455,12 @@
 
     <div class="itensheader">
         <ul>
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-            <li><i class="fa-solid fa-rss"></i></li>
-            <li>CADASTRA-SE</li>
-            <li>LOGIN</li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-solid fa-rss"></i></a></li>
+            <a href="#" target="_blank"><li>CADASTRA-SE</li></a>
+            <a href="#" target="_blank"><li>LOGIN</li></a>
         </ul>
     </div>
 
@@ -390,17 +470,33 @@
 
     <div class="itensnav">
         <ul>
-            <li>ARTIGO</li>
-            <li>ECONOMIA</li>
-            <li>POLÍTICA</li>
-            <li>ENTREVISTAS</li>
-            <li>LOJA</li>
+            <a href="#">
+                <li>ARTIGO</li>
+            </a>
+            <a href="#">
+                <li>ECONOMIA</li>
+            </a>
+            <a href="#">
+                <li>POLÍTICA</li>
+            </a>
+            <a href="#">
+                <li>ENTREVISTAS</li>
+            </a>
+            <a href="#">
+                <li>LOJA</li>
+            </a>
         </ul>
 
         <ul class="ícones">
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-message"></i></li>
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
+           
+            <div class="bar">
+                <a href="#" class="search-button">
+                    <img src="images/loupe (1).png" alt="Barra de pesquisa">
+                </a>
+                <input type="text" class="search-text" placeholder="Pesquisar">
+                
+
+            </div>
         </ul>
     </div>
 
@@ -425,13 +521,17 @@
 
   <section class="gridcontainer">
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-             <div class="overlay"></div>
+        <a href="" target="_self">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                 <div class="overlay"></div>
+        </a>
         </div>
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>Afinal, qual é o melhor curso Ancord?</h2>
+                    <a href="#">
+                        <h2>Afinal, qual é o melhor curso Ancord?</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>Se você tem interesse em seguir na trilha dos investimentos, o curso Ancord compila todo o conhecimento necessário para o exame dessa certificação financeira.</p>
@@ -442,14 +542,18 @@
     </div>
 
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-         <div class="overlay"></div>
+        <a href="#">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+             <div class="overlay"></div>
+        </a>
         </div>
 
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>O que fazer se você ganhar na loteria? Confira dicas para fazer o prêmio render</h2>
+                    <a href="#">
+                        <h2>O que fazer se você ganhar na loteria? Confira dicas para fazer o prêmio render</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>Dados de 2021, levantados pela consultoria britânica Newmark, apontam que o número de milionários no Brasil pode ultrapassar 480 mil pessoas até 2025. E, se você ganhar na loteria, também pode entrar para esse time</p>
@@ -461,14 +565,18 @@
     
 
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-             <div class="overlay"></div>
-        
-        </div>
+        <a href="#">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                 <div class="overlay"></div>
+            
+            </div>
+        </a>
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>Artigo da Betway mostra consolidação do Pará na produção de cacau com mais de 140 mil toneladas por ano</h2>
+                    <a href="#">
+                        <h2>Artigo da Betway mostra consolidação do Pará na produção de cacau com mais de 140 mil toneladas por ano</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>A região Norte do Brasil é constantemente apontada como uma das mais frágeis economicamente. Entretanto, os números mostram uma situação diferente.</p>
@@ -479,14 +587,18 @@
     </div>
 
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-             <div class="overlay"></div>
-        
-        </div>
+        <a href="#">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                 <div class="overlay"></div>
+            
+            </div>
+        </a>
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>A economia de um casino - como funciona</h2>
+                    <a href="#">
+                        <h2>A economia de um casino - como funciona</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>Em Las Vegas os hotéis cassinos atraem mais de 38 milhões de turistas todo o ano. Estas e outras casas de jogos lucram oferecendo jogos de apostas que oferecem pagamentos médios inferiores à renda produzida pelas apostas</p>
@@ -498,15 +610,19 @@
 
     <div class="gridcards">
        
-            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-                 <div class="overlay"></div>
-            
-            </div>
+            <a href="#">
+                <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                     <div class="overlay"></div>
+                
+                </div>
+            </a>
             
                 <div class="container-content">
                     <div class="content-card">
                         <div class="titlecard">
-                            <h2>O poder da informação no planejamento financeiro doméstico</h2>
+                            <a href="#">
+                                <h2>O poder da informação no planejamento financeiro doméstico</h2>
+                            </a>
                         </div>
                     
                                     <div class="desccard">
@@ -521,14 +637,18 @@
 
 
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-             <div class="overlay"></div>
-        
-        </div>
+        <a href="#">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                 <div class="overlay"></div>
+            
+            </div>
+        </a>
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>Turismo residencial é alternativa para quem desejar economizar nas viagens de férias</h2>
+                    <a href="#">
+                        <h2>Turismo residencial é alternativa para quem desejar economizar nas viagens de férias</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>Os gastos com viagens costumam ser altos para todas as famílias, sejam estes destinados para férias fora do Brasil ou até mesmo para uma visita em um estado diferente.</p>
@@ -541,14 +661,18 @@
    
 
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-             <div class="overlay"></div>
-        
-        </div>
+        <a href="#">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                 <div class="overlay"></div>
+            
+            </div>
+        </a>
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>ApexBrasil impulsiona recorde de faturamento da indústria de alimentos e bebidas e exportações do agronegócio brasileiro em 2021</h2>
+                    <a href="#">
+                        <h2>ApexBrasil impulsiona recorde de faturamento da indústria de alimentos e bebidas e exportações do agronegócio brasileiro em 2021</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>Agronegócio fechou o ano com aumento de 18,4% e indústria alimentícia com alta de 16,8% no faturamento das exportações.</p>
@@ -559,14 +683,18 @@
     </div>
 
     <div class="gridcards">
-        <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
-             <div class="overlay"></div>
-        
-        </div>
+        <a href="#">
+            <div class="iconcards"> <img src="images/curso_ancord-370x180.png" alt="">
+                 <div class="overlay"></div>
+            
+            </div>
+        </a>
         <div class="container-content">
             <div class="content-card">
                 <div class="titlecard">
-                    <h2>A legalização do jogo poderia ajudar o Brasil em sua crise financeira?</h2>
+                    <a href="#">
+                        <h2>A legalização do jogo poderia ajudar o Brasil em sua crise financeira?</h2>
+                    </a>
                 </div>
                 <div class="desccard">
                     <p>Um dos argumentos mais contundentes sobre a regulamentação dos jogos em território brasileiro é o argumento de que o mercado poderia salvar o Brasil da atual crise financeira que enfrenta.<p>
@@ -576,10 +704,11 @@
         
     </div>
     
-    <div class="anuncio">
-        <img src="images/banner3-390-x-400.png.crdownload" alt="">
-
-    </div>
+    <a href="#">
+        <div class="anuncio">
+            <img src="images/banner3-390-x-400.png.crdownload" alt="">
+        </div>
+    </a>
     
   </section>
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+    <title>Barra de pesquisa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #194234;
+        }
+
+        .bar{
+
+            height: 40px;
+            background-color: #286852;
+            padding: 10px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+
+
+        }
+
+        .search-bar{
+            font-size: 16px;
+            font-weight: 400;
+            color: white;
+            outline: 0;
+            border: 0;
+            background-color: #286852;
+            width: 0;
+            padding:0;
+
+
+        }
+
+        .search-bar::placeholder{
+            color: #194234;
+            
+        }
+
+        .search-button img{
+          width: 20px;
+          height: 20px;
+        
+           
+
+        }
+
+        .search-button{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bar:hover > .search-bar{
+            width: 200px;
+            transition: 0.5s;
+        }
+
+        .bar:hover .search-button{
+            background-color: white;
+            transition: 0.5s;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="bar">
+        <input type="text" class="search-bar" placeholder="Pesquisar">
+        <a href="" class="search-button">
+          <img src="images/loupe.png" alt="Barra de pesquisa">
+        </a>
+    </div>
+    
+</body>
+</html>
